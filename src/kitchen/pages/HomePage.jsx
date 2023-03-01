@@ -4,3 +4,4 @@ export const HomePage = () => {
     <div>Página de inicio</div>
   )
 }
+
