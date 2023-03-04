@@ -1,6 +1,9 @@
+import { MainLayout } from "../../theme/layout/MainLayout"
 
 export const ContactPage = () => {
   return (
-    <div>Página de contacto</div>
+    <MainLayout>
+      Página de contacto
+    </MainLayout>
   )
 }

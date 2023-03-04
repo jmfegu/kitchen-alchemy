@@ -1,6 +1,9 @@
+import { MainLayout } from "../../theme/layout/MainLayout";
 
 export const SearcherPage = () => {
   return (
-    <div>Buscador de recetas</div>
+    <MainLayout>
+      Buscador
+    </MainLayout>
   )
 }

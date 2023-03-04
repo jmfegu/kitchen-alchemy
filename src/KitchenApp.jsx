@@ -8,8 +8,8 @@ export const KitchenApp = () => {
       <Route path="/" element={ <HomePage /> } />
       <Route path="/buscador" element={ <SearcherPage /> } />
       <Route path="/contacto" element={ <ContactPage /> } />
-      <Route path="/signin" element={< SignIn />} />
-      <Route path="/signup" element={< SignUp />} />
+      <Route path="/login" element={< SignIn />} />
+      <Route path="/registro" element={< SignUp />} />
       <Route path="/*" element={ <Page404/> } />
     </Routes>
   )

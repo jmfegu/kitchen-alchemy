@@ -1,7 +1,10 @@
+import { MainLayout } from "../../theme/layout/MainLayout"
 
 export const HomePage = () => {
   return (
-    <div>Página de inicio</div>
+    <MainLayout>
+      Home Page
+    </MainLayout>
   )
 }
 
