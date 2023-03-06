@@ -25,19 +25,27 @@ export const SignIn = () => {
       <Grid container component="main" sx={{ height: '100vh' }}>
         <Grid
           item
+          component="picture"
           xs={false}
           sm={4}
-          md={6}
-          sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random/1000×700/?fruit)',
-            backgroundRepeat: 'no-repeat',
-            backgroundColor: (t) =>
-              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <Grid item xs={12} sm={8} md={6} component={Paper} elevation={6} square>
+          md={7}
+          position={'relative'}
+          overflow={'hidden'}
+          >
+          <Box
+            component={'img'}
+            src={'https://source.unsplash.com/random/1000×700/?fruit'}
+            alt={'Fruits'}
+            sx={{
+              objectFit: 'cover',
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%'
+            }}
+          />
+        </Grid>
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
               my: 8,
