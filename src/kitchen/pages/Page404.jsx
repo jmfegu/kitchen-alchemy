@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MainLayout } from "../../theme/layout/MainLayout";
+import { MainLayout } from "../../ui/layout/MainLayout";
+
 
 export const Page404 = () => {
   return (

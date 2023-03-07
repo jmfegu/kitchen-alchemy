@@ -39,7 +39,7 @@ export const MainNav = () => {
 
   return (
     <AppBar position="sticky">
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
