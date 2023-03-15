@@ -2,13 +2,16 @@ import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 // Create a theme instance.
-export const kitchenTheme = createTheme({
+export const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#19857b',
     },
     secondary: {
-      main: '#19857b',
+      main: '#556cd6',
+    },
+    other: {
+      main: '#ffffff',
     },
     error: {
       main: red.A400,

@@ -4,14 +4,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 
 import { KitchenApp } from './KitchenApp';
-import { kitchenTheme } from './theme/kitchenTheme';
-
+import { theme } from './theme/theme';
 import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={ kitchenTheme }>
+      <ThemeProvider theme={ theme }>
         <CssBaseline/>
         <KitchenApp />
       </ThemeProvider>
