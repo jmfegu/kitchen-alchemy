@@ -10,11 +10,11 @@ export const MainLayout = ({children}) => {
         gridTemplateRows={'auto 1fr auto'}
       >
         <MainNav/>
-        <Container maxWidth={'xl'} component={'main'}>
+        <Container maxWidth={'lg'} component={'main'}>
           {children}
         </Container>
         <Box component="footer">
-          <Container maxWidth={'xl'} component={'main'}>
+          <Container maxWidth={'lg'} component={'main'}>
             Footer
           </Container>
         </Box>
