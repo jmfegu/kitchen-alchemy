@@ -1,5 +1,5 @@
 import { Box, Checkbox, CircularProgress, Divider, FormControl, FormControlLabel, FormGroup, FormLabel, Skeleton } from "@mui/material";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -14,12 +14,12 @@ import { MainLayout } from "../../ui/layout/MainLayout";
 
 export const SearcherPage = () => {
 
-  const [ recipes, setRecipes ] = useState(null);
-  const [ filters, setFilters] = useState(null)
+  const [ recipes, setRecipes ] = useState();
+  const [ filters, setFilters] = useState()
 
   const getAllRecipes = async () => {
     const recipes = recipesStore;
-    return recipes;
+    setRecipes(recipes);
   }
 
   const getAllFilters = async () => { // Esto será una función async para obtener los filtros desde base de datos.
@@ -35,8 +35,7 @@ export const SearcherPage = () => {
 
   useEffect(() => {
     getAllFilters();
-    const initialAllRecipes = getAllRecipes();
-    setRecipes(initialAllRecipes);
+    getAllRecipes();
   }, [])
 
   const handleChange = (event) => {
